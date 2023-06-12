@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todo.css">
+    <title>TODO list application</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="logo" class="head-logo">
+            <h1>Dancho's TODO list</h1>
+        </header>
+        <img src="./images/undraw_checklist__re_2w7v.svg" alt="todo" class="body-img">
+        <form>
+            <input type="text" id="inP" placeholder="Write here...">
+            <button type="submit" class="form-btn"><i class="fas fa-plus"></i></button>
+        </form>
+
+        <div class="todo">
+            <ul id="remove"></ul>
+            <a href="#" id="clear">Clear all</a>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    background-image: url(./images/2ndwave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+}
+.body-img {
+    width: 25%;
+    position: absolute;
+    top: 45%;
+    left: -10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.head-logo {
+    width: 50px;
+}
+form {
+    width: clamp(100px, 65%, 350px);
+    height: 25px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(70, 63, 63);
+}
+input[type="text"] {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    color: rgb(54, 49, 49);
+    font-weight: bold;
+    font-size: 1em;
+}
+:placeholder {
+    color: rgb(20, 19, 19);
+    font-family: 'Varela Round', sans-serif;
+}
+button {
+    outline: 0;
+    border: 0;
+    border-radius: 7px;
+}
+.form-btn {
+   padding: 5px;
+}
+.fas {
+    width: 16px;
+}
+button:hover {
+    background-color: rgb(34, 100, 126);
+}
+li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: 1px solid grey;
+    text-transform: capitalize;
+}
+.todo-list {
+    flex: 1;
+}
+#clear {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    font-size: 0.875em;
+}
+#clear:hover {
+    color: rgb(34, 100, 126);
+}
+.todo {
+    width: clamp(150px, 70%, 400px);
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 7px 15px;
+    border: 1px solid rgb(70, 63, 63);
+}
+.todo-list-item {
+    transition: all 0.3s ease;
+}
+.todo-list-item-fall {
+    transform: translateY(7em) rotate(10deg);
+    opacity: 0;
+}
+.btn-list {
+    padding: 5px;
+    margin-left: 5px;
+}
+.fa-check, .fa-trash-alt {
+    pointer-events: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(160, 139, 139);
+}
+
+@media (max-width: 850px) {
+    .body-img {
+        display: none;
+    }
+}
